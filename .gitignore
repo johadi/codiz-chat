@@ -14,3 +14,4 @@ screenshots/
 /.nyc_output
 /dist
 package-lock.json
+client/src/build/bundle.js

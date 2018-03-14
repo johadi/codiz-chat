@@ -7,10 +7,10 @@ const TARGET = process.env.npm_lifecycle_event;
 process.env.BABEL_ENV = TARGET;
 
 // variable that holds package.json script command for running the webpack config file
-// in production mode or development mode.
+// in production mode or in development mode.
 const script = {
   dev: 'build:dev',
-  prod: 'build'
+  prod: 'heroku-postbuild'
 };
 const PATHS = {
   app: path.join(__dirname, 'client/src'),
