@@ -1,4 +1,5 @@
-*codiz-chat* is an application where developers chat on what they are currently doing. Make quotes for the day on what is going on in the programming atmosphere.
+# Codizchat [![Build Status](https://travis-ci.org/johadi10/codiz-chat.svg?branch=staging)](https://travis-ci.org/johadi10/codiz-chat) [![Coverage Status](https://coveralls.io/repos/github/johadi10/codiz-chat/badge.svg?branch=staging)](https://coveralls.io/github/johadi10/codiz-chat?branch=staging)
+*Codizchat* is an application where developers chat on what they are currently doing. Make quotes for the day on what is going on in the programming atmosphere.
 This application is currently under development and has no much information for now. As we progress in the application development, we will be updating the repo to reflect the workdone.
 ## INSTALLATION
 - clone the repo
