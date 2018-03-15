@@ -7,7 +7,7 @@
     "server": "nodemon --watch server --exec babel-node -- server/server.js",
     "start": "npm run build",
     "build:dev": "webpack-dev-server --mode development",
-    "test": "export NODE_ENV=test && nyc --reporter=html --reporter=text mocha --compilers js:babel-register server/tests/**/*.test.js",
+    "test": "export NODE_ENV=test && nyc --reporter=html --reporter=text mocha --compilers js:babel-register server/tests/**/*.test.js --exit",
     "remove-dist": "rimraf ./dist && rimraf ./.idea && rimraf ./.git",
     "clean-dist": "npm run remove-dist && mkdir dist",
     "build:html": "npm install && node tools/buildTools/buildHtml.js",

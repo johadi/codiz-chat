@@ -10,15 +10,13 @@ import dotenv from 'dotenv';
 
 import logger from '../server/helpers/logger';
 import socket from '../server/socket/socket';
-import mongooseSetting from '../server/config/mongooseSetting';
+// import mongooseSetting from '../server/config/mongooseSetting';
 import apiRoutes from './routes';
 
 dotenv.config();
 const port = process.env.PORT || 5000;
 const app = express();
-
-// connect to database and start server
-mongooseSetting();
+// Create winston logger
 
 app.use(morganLogger('dev'));
 app.use(bodyParser.json());
@@ -29,7 +27,7 @@ app.use(express.static('dist'));
 // uncomment for favicon
 // app.use(favicon(path.join(__dirname, 'favicon.ico')));
 
-// Registers our api routes
+// connect to database and start server
 apiRoutes(app);
 
 app.get('*', (req, res) => {
@@ -40,7 +38,7 @@ const server = http.createServer(app);
 socket(server);
 
 server.listen(port, (err) => {
-  if (err) throw err;
+  if (err) logger.error(err);
 
   logger.info('app running on port', port);
 });

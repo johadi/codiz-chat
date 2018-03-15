@@ -4,13 +4,13 @@ import express from 'express';
 import {
   signUp,
   signIn
-} from '../controllers';
+} from '../../controllers/V1';
 
 // Express router
 const router = express.Router();
 
 router.get('/', (req, res) =>
-  res.status(200).json('Welcome to the TopChat API'));
+  res.status(200).json('Welcome to the Codizchat V1 API'));
 router.route('/signup')
   .get(signUp);
 router.route('/signin')
