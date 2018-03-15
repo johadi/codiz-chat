@@ -12,7 +12,7 @@ describe('First test', () => {
     expect(wrapper).toHaveLength(1);
   });
   it('It should have 3 navigation links', () => {
-    expect(wrapper.find('Link').length).toBe(3);
+    expect(wrapper.find('Link').length).toBe(4);
   });
   it('It should have navigation links with text "Home"', () => {
     expect(wrapper.find('Link').at(0).text()).toBe('Home');
