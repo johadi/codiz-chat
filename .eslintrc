@@ -30,6 +30,7 @@
   },
   "globals": {
     "document": true,
+    "expect": true,
     "window": true,
     "localStorage": true,
     "swal": true,
