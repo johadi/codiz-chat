@@ -10,6 +10,7 @@ process.env.BABEL_ENV = TARGET;
 // in production mode or in development mode.
 const script = {
   dev: 'build:dev',
+  // prod: 'build'
   prod: 'heroku-postbuild'
 };
 const PATHS = {
