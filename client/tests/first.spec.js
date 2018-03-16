@@ -3,7 +3,7 @@ import { mount } from 'enzyme';
 import { MemoryRouter } from 'react-router-dom';
 import App from '../src/components/App';
 
-describe('First test', () => {
+describe('First Test', () => {
   const wrapper = mount(<MemoryRouter>
       <App/>
     </MemoryRouter>);
